@@ -1,0 +1,172 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: #fafafa;
+	font-size: 16px;
+	color: #252b42;
+	font-weight: 400;
+	font-family: Roboto;
+}
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------------------------------------------------------------------- */
+._container {
+	max-width: 1600px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+
+/* ................................Шапка............................................ */
+
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	min-height: 79px;
+}
+
+.header__logo {
+	margin: 0px 0px 0px 245px;
+}
+.header__menu {
+	margin: 10px 230px 0px 245px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 5px 0;
+}
+@media (max-width: 992) {
+	.header__menu {
+		margin: 0px 0px 0px 80px;
+	}
+}
+@media (max-width: 767) {
+	.header__menu {
+		margin: 0px 0px 0px 50px;
+	}
+}
+.menu {
+	display: flex;
+}
+.menu__list {
+	flex-wrap: wrap;
+	display: flex;
+}
+.menu__item {
+	margin: 0px 0px 0px 40px;
+}
+._item {
+	font-size: 16px;
+	line-height: 114%;
+}
+._item:visited {
+	color: #d23166;
+}
+
+.menu__link {
+	color: #150101;
+	line-height: 114%;
+	font-size: 14px;
+}
+.menu__link:hover {
+	text-decoration: underline;
+}
+.header__block__button {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 0px 0px 152px;
+	background: #d23166;
+	border-radius: 5px;
+	width: 165px;
+	height: 49px;
+}
+.header__block__button:hover {
+	background: #ac053d;
+	text-decoration: underline;
+}
+.block__button {
+	font-family: Hind Madurai;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 14px 50px;
+	color: #fff;
+}
+
+/* .........................PAGE............................. */
+
+.page {
+	flex: 1 1 auto;
+}
+.page__main-block {
+}
+
+/*                          MAIN BLOCK...................... */
+
+.main-block {
+	position: relative;
+}
+.main-block__container {
+}
+
+.main-block__body {
+}
+.main-block__subtitle {
+}
+.main-block__title {
+}
+.ice {
+}
+.main-block__text {
+}
+.main-block__buttons {
+}
+.main-block__button {
+}
+.block__button {
+}
+
+/* .........................ПОДВАЛ........................ */
+
+.footer {
+}
